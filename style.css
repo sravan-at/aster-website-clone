@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+.not-sticky__navbar {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #164289;
+    padding-right: 100px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+
+    .not-sticky__navbar--links {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+}
+
+.sticky__navbar {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #164d92;
+
+    position: sticky;
+    left: 0;
+    top: 0;
+
+
+    .sticky__navbar--condainer {
+        height: 80px;
+        width: 100%;
+        padding: 0 100px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .sticky__navbar--link-container {
+            display: flex;
+
+            .sticky__navbar--box {
+                display: flex;
+                gap: 5px;
+
+                padding: 10px;
+                border-left: 2px solid #468c9a;
+                align-items: stretch;
+                height: 80px;
+
+                .sticky__navbar--icon {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .sticky__navbar--link {
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+            }
+
+            .sticky__navbar--box:hover {
+                background-color: #00b48d;
+            }
+
+            .sticky__navbar--btn {
+                border: none;
+                background-color: transparent;
+                padding-left: 30px;
+
+                .sticky__navbar--icon {
+                    width: 30px;
+                    height: 30px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.hero {
+    background-image: url('./img/hero_bg_img.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: calc(100vh - 120px);
+    padding-bottom: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .hero__search {
+        display: flex;
+
+        .hero__search--inputs {
+            background-color: rgba(245, 245, 245, 0.575);
+            padding: 23px 80px;
+
+            display: flex;
+            gap: 50px;
+
+            .search__hospital-or-city,
+            .search__doctor-or-speciality {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                .input__label {
+                    color: #194f93;
+                    font-weight: 400;
+                }
+
+                .search__input {
+                    border: none;
+                    outline: none;
+                    padding: 13px 30px;
+                    border-radius: 3px;
+                    caret-color: #00b48d;
+                }
+            }
+        }
+
+        .search__btn {
+            border: none;
+            width: 100px;
+            background-color: #00b48d;
+            color: whitesmoke;
+            font-size: 15px;
+        }
+    }
+}
+
+.about-aster {
+    padding: 50px 100px;
+
+    .about-aster__heading {
+        font-size: 40px;
+        font-weight: 600;
+        color: #164d92;
+    }
+
+    .about-aster__para {
+        padding: 20px 0;
+    }
+
+    .about-aster__btn--know-more {
+        border: 2px solid #00b48d;
+        color: #00b48d;
+        background-color: white;
+        padding: 25px 30px;
+        font-weight: 700;
+        border-radius: 3px;
+        box-shadow: 3px 3px 8px #888888;
+    }
+
+    .about-aster__btn--know-more:hover {
+        background-color: #00b48d;
+        color: white;
+    }
+
+    .about-aster__img {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .aster-services {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            padding: 0 25px;
+
+            .service-count {
+                font-size: 30px;
+                font-weight: 600;
+                color: #103547;
+
+                .plus__span {
+                    color: #328090;
+                }
+            }
+
+            .service-name {
+                font-size: 20px;
+                font-weight: 300;
+                padding-bottom: 10px;
+                color: #328090;
+            }
+
+            .service-discription {
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .service:not(.service-patients) {
+            border-right: 2px solid #cad2d5;
+        }
+    }
+}
+
+.aster-locations {
+    background-image: linear-gradient(to bottom right, #00b18d, #155492);
+    padding: 30px 100px;
+
+    .locations__heading {
+        font-size: 50px;
+        color: white;
+    }
+
+    .locations__para-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .locations__para {
+        color: white;
+    }
+
+    .locations__btn {
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+
+    .locations__btn:hover {
+        color: #00b18d;
+    }
+
+    .aster-cards {
+        display: flex;
+        gap: 30px;
+        padding-top: 30px;
+
+        .card__medcity-kochi {
+            background-image: url('./img/aster-medcity-kochi.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 400px;
+            color: whitesmoke;
+            border-radius: 3px;
+
+            .card__black-effect {
+                background-color: rgba(0, 0, 0, 0.600);
+                border-radius: 3px;
+                padding: 60px 15px;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card__medcity-kochi--location {
+                background-color: #00b48d;
+                width: fit-content;
+                padding: 3px 2px;
+                border-radius: 3px;
+            }
+
+            .card__medcity-kochi--address {
+                font-size: 12px;
+            }
+
+            .card__medcity-kochi--link {
+                font-size: 12px;
+                font-weight: 900;
+                color: #00b48d;
+            }
+
+            .card__medcity-kochi--emergency-contact {
+                font-size: 13px;
+                color: #888888;
+            }
+
+            .card__medcity-kochi--contact-number {
+                font-size: 15px;
+            }
+
+            .card__medcity-kochi--specialities {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+        .card__cmi-bangalore {
+            background-image: url('./img/aster-cmi-bangalore.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 400px;
+            color: whitesmoke;
+            border-radius: 3px;
+
+            .card__black-effect {
+                background-color: rgba(0, 0, 0, 0.600);
+                border-radius: 3px;
+                padding: 60px 15px;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card__cmi-bangalore--location {
+                background-color: #00b48d;
+                width: fit-content;
+                padding: 3px 2px;
+                border-radius: 3px;
+            }
+
+            .card__cmi-bangalore--address {
+                font-size: 12px;
+            }
+
+            .card__cmi-bangalore--link {
+                font-size: 12px;
+                font-weight: 900;
+                color: #00b48d;
+            }
+
+            .card__cmi-bangalore--emergency-contact {
+                font-size: 13px;
+                color: #888888;
+            }
+
+            .card__cmi-bangalore--contact-number {
+                font-size: 15px;
+            }
+
+            .card__cmi-bangalore--specialities {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+        .card__mims-calicut {
+            background-image: url('./img/aster-mims-calicut-vertical-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 400px;
+            color: whitesmoke;
+            border-radius: 3px;
+
+            .card__black-effect {
+                background-color: rgba(0, 0, 0, 0.600);
+                border-radius: 3px;
+                padding: 60px 15px;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card__mims-calicut--location {
+                background-color: #00b48d;
+                width: fit-content;
+                padding: 3px 2px;
+                border-radius: 3px;
+            }
+
+            .card__mims-calicut--address {
+                font-size: 12px;
+            }
+
+            .card__mims-calicut--link {
+                font-size: 12px;
+                font-weight: 900;
+                color: #00b48d;
+            }
+
+            .card__mims-calicut--emergency-contact {
+                font-size: 13px;
+                color: #888888;
+            }
+
+            .card__mims-calicut--contact-number {
+                font-size: 15px;
+            }
+
+            .card__mims-calicut--specialities {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+        .card__rv-bangalore {
+            background-image: url('./img/aster-rv-bangalore.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 400px;
+            color: whitesmoke;
+            border-radius: 3px;
+
+            .card__black-effect {
+                background-color: rgba(0, 0, 0, 0.600);
+                border-radius: 3px;
+                padding: 60px 15px;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card__rv-bangalore--location {
+                background-color: #00b48d;
+                width: fit-content;
+                padding: 3px 2px;
+                border-radius: 3px;
+            }
+
+            .card__rv-bangalore--address {
+                font-size: 12px;
+            }
+
+            .card__rv-bangalore--link {
+                font-size: 12px;
+                font-weight: 900;
+                color: #00b48d;
+            }
+
+            .card__rv-bangalore--emergency-contact {
+                font-size: 13px;
+                color: #888888;
+            }
+
+            .card__rv-bangalore--contact-number {
+                font-size: 15px;
+            }
+
+            .card__rv-bangalore--specialities {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .aster-locations__arrows {
+        display: flex;
+        padding-top: 30px;
+        gap: 20px;
+
+        .left__arrow,
+        .right__arrow {
+            padding: 25px 25px;
+            border: 1px solid white;
+            color: white;
+            background-color: transparent;
+        }
+
+        .left__arrow:hover,
+        .right__arrow:hover {
+            background-color: #00b18d;
+            border: 2px solid #00b18d;
+        }
+    }
+}
+
+.aster-excellence {
+    padding: 30px 100px;
+    background-color: #f1f1f1;
+
+    .aster-excellence__heading {
+        font-size: 50px;
+        color: #164289;
+    }
+
+    .aster-excellence__para-btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .btn__view-more {
+            border: none;
+            background-color: transparent;
+        }
+
+        .btn__view-more:hover {
+            color: #00b18d;
+        }
+
+    }
+
+    .aster-excellence__cards {
+        display: flex;
+        gap: 30px;
+
+        .card {
+            background-color: white;
+            padding: 50px 20px;
+            width: 400px;
+            height: 300px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 8px #888888;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .card__icon {
+                height: 40px;
+                width: 40px;
+            }
+
+            .card__heading {
+                color: #164d92;
+            }
+
+            .card__para {
+                font-weight: 300;
+                font-size: 13px;
+            }
+
+            .card__btn {
+                display: none;
+            }
+        }
+
+        .card:hover {
+            background: linear-gradient(#00b48dd8, #00b48d1f);
+            scale: 1 1.1;
+            transition: scale 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            .card__heading,
+            .card__para,
+            .card__icon {
+                color: white;
+            }
+
+            .card__btn {
+                display: inline-block;
+                color: white;
+                border: none;
+                background-color: transparent;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .aster-excellence__arrows {
+        display: flex;
+        padding-top: 30px;
+        gap: 20px;
+
+        .left__arrow,
+        .right__arrow {
+            padding: 25px 25px;
+            border: 1px solid #00b18d;
+            color:#00b18d;
+            background-color: transparent;
+            border-radius: 3px;
+        }
+
+        .left__arrow:hover,
+        .right__arrow:hover {
+            background-color: #00b18d;
+            color: white;
+        }
+    }
+}
