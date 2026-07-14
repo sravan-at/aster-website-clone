@@ -608,3 +608,14 @@ body {
         }
     }
 }
+
+.more-featurs{
+    padding: 30px 100px;
+    background: linear-gradient(to bottom right, #164e92, #00b28d);
+
+    .more-featurs__heading{
+        font-size: 50px;
+        color: white;
+
+    }
+}
